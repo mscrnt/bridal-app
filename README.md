@@ -14,6 +14,41 @@ A beautiful, mobile-first wedding/bridal party website optimized for iPad and iP
 - **Password Protected** - Secure authentication for private access
 - **Modular SCSS** - Organized, maintainable styling system
 
+## Screenshots
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <strong>Login Screen</strong><br>
+      <img src=".github/screenshots/login.png" alt="Login Screen" width="100%">
+    </td>
+    <td width="50%" align="center">
+      <strong>Welcome Section</strong><br>
+      <img src=".github/screenshots/welcome.png" alt="Welcome Section" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <strong>The Crew</strong><br>
+      <img src=".github/screenshots/the-crew.png" alt="The Crew Section" width="100%">
+    </td>
+    <td width="50%" align="center">
+      <strong>The Dress</strong><br>
+      <img src=".github/screenshots/the-dress.png" alt="The Dress Section" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <strong>Itinerary</strong><br>
+      <img src=".github/screenshots/itinerary.png" alt="Itinerary Section" width="100%">
+    </td>
+    <td width="50%" align="center">
+      <strong>Our Stay</strong><br>
+      <img src=".github/screenshots/stay.png" alt="Our Stay Section" width="100%">
+    </td>
+  </tr>
+</table>
+
 ## Sections
 
 1. **Welcome** - Hero image with welcome message

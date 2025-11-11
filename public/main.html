@@ -22,16 +22,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
 
     <!-- Authentication Protection -->
-    <script>
-        // Check authentication before rendering page
-        const AUTH_KEY = 'bridalPartyAuth';
-        const CORRECT_PASSWORD = 'SienaTrey';
-        const AUTH_TOKEN = 'authenticated_' + btoa(CORRECT_PASSWORD);
+    <script type="module">
+        import { loadConfig } from './js/modules/config.js';
 
-        if (localStorage.getItem(AUTH_KEY) !== AUTH_TOKEN) {
-            // Not authenticated, redirect to auth page
-            window.location.replace('auth.html');
+        // Check authentication before rendering page
+        async function checkAuth() {
+            const config = await loadConfig();
+            const AUTH_KEY = 'bridalPartyAuth';
+            const CORRECT_PASSWORD = config.auth.password;
+            const AUTH_TOKEN = 'authenticated_' + btoa(CORRECT_PASSWORD);
+
+            if (localStorage.getItem(AUTH_KEY) !== AUTH_TOKEN) {
+                // Not authenticated, redirect to auth page
+                window.location.replace('auth.html');
+            }
         }
+
+        checkAuth();
     </script>
 </head>
 <body>
