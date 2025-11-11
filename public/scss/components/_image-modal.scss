@@ -1,0 +1,160 @@
+/* ===========================
+   Placeholder Images
+   =========================== */
+img[src*="placeholder"] {
+    background: linear-gradient(135deg, var(--color-champagne) 0%, var(--color-ivory) 100%);
+    min-height: 200px;
+}
+
+/* ===========================
+   Image Modal
+   =========================== */
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    overflow: auto;
+}
+
+.image-modal-content {
+    display: block;
+    margin: auto;
+    width: 85%;
+    height: 85vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+}
+
+.image-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: var(--color-white);
+    font-size: 50px;
+    font-weight: 300;
+    cursor: pointer;
+    z-index: 10000;
+    transition: color 0.3s ease;
+}
+
+.image-modal-close:hover,
+.image-modal-close:focus {
+    color: var(--color-primary);
+}
+
+.image-modal-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--color-white);
+    font-size: 4rem;
+    font-weight: 300;
+    cursor: pointer;
+    padding: 0 20px;
+    z-index: 10000;
+    transition: color 0.3s ease, transform 0.2s ease;
+    user-select: none;
+}
+
+.image-modal-prev {
+    left: 20px;
+}
+
+.image-modal-next {
+    right: 20px;
+}
+
+.image-modal-nav:hover {
+    color: var(--color-primary);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.image-modal-nav:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.image-modal-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-white);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    max-width: 90%;
+    z-index: 10001;
+}
+
+/* Make accessory carousel images clickable */
+.accessory-carousel-slide img {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.accessory-carousel-slide img:hover {
+    opacity: 0.9;
+}
+
+/* Mobile: Move modal navigation buttons below image */
+@media (max-width: 768px) {
+    .image-modal-caption {
+        bottom: 100px;
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .image-modal-nav {
+        position: fixed;
+        top: auto;
+        bottom: 40px;
+        transform: translateY(0);
+        font-size: 3rem;
+        padding: 10px 20px;
+    }
+
+    .image-modal-prev {
+        left: 50%;
+        transform: translateX(-80px);
+    }
+
+    .image-modal-next {
+        right: auto;
+        left: 50%;
+        transform: translateX(20px);
+    }
+
+    .image-modal-nav:hover {
+        transform: translateX(-80px) scale(1.1);
+    }
+
+    .image-modal-next:hover {
+        transform: translateX(20px) scale(1.1);
+    }
+
+    .image-modal-nav:active {
+        transform: translateX(-80px) scale(0.95);
+    }
+
+    .image-modal-next:active {
+        transform: translateX(20px) scale(0.95);
+    }
+
+    .image-modal-content {
+        height: 75vh;
+    }
+}
+

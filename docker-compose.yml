@@ -1,0 +1,33 @@
+services:
+  wedding-website:
+    build: .
+    container_name: wedding-party-website
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    environment:
+      - TZ=America/Los_Angeles
+      - AUTH_PASSWORD=${AUTH_PASSWORD}
+    volumes:
+      - ./public:/usr/share/nginx/html
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend
+    container_name: wedding-backend
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+      - OPENWEATHER_API_KEY=${OPENWEATHER_API_KEY}
+      - NODE_ENV=production
+      - TZ=America/Los_Angeles
+    volumes:
+      - weather-data:/app/cache
+      - ./backend/data:/app/data:ro
+    restart: unless-stopped
+
+volumes:
+  weather-data:
+    driver: local

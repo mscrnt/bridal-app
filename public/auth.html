@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="description" content="Bridal Party Welcome Guide">
+
+    <!-- iOS Specific Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Bridal Party">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icons/favicon.png">
+    <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
+
+    <title>Welcome - Bridal Party Guide</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <div class="auth-container">
+        <img src="images/icons/st_icon_transparent.png" alt="ST Logo" class="auth-logo">
+        <h1 class="auth-title">Bridal Party</h1>
+        <h2 class="auth-subtitle">Welcome Guide</h2>
+        <p class="auth-description">
+            This is a private guide for our special bridal party. Please enter the password to continue.
+        </p>
+
+        <form class="auth-form" id="authForm">
+            <div class="form-group">
+                <label class="form-label" for="password">Password</label>
+                <div class="password-wrapper">
+                    <input
+                        type="password"
+                        id="password"
+                        class="form-input"
+                        placeholder="Enter password"
+                        required
+                        autocomplete="off"
+                    >
+                    <button type="button" class="toggle-password" id="togglePassword" aria-label="Show password">
+                        Show
+                    </button>
+                </div>
+                <p class="error-message" id="errorMessage">Incorrect password. Please try again.</p>
+            </div>
+
+            <button type="submit" class="submit-button">Enter</button>
+        </form>
+    </div>
+
+    <script type="module" src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+/* ===========================
+   Pack Your Bags Section
+   =========================== */
+.packing-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.packing-category {
+    background-color: var(--color-bg-light);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+}
+
+.category-title {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-dark);
+    text-align: center;
+}
+
+.packing-note {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-md);
+    background-color: var(--color-champagne);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.packing-note p {
+    color: var(--color-text-dark);
+    font-weight: 500;
+}
+

@@ -1,0 +1,54 @@
+/* ===========================
+   Main Content Layout
+   =========================== */
+.main-content {
+    margin-top: var(--header-height);
+    padding-bottom: var(--spacing-xl);
+}
+
+.section {
+    min-height: 100vh;
+    padding: var(--spacing-lg) var(--mobile-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Reduce padding specifically for crew section on mobile */
+.crew-section {
+    padding: 0 var(--mobile-padding) var(--spacing-xl);
+    align-items: flex-start;
+    padding-top: var(--header-height);
+    min-height: 100vh;
+}
+
+/* Alternating background colors for sections */
+/* Pattern: Ivory -> White -> Lavender -> White -> Lavender (repeating) */
+.welcome-section {
+    background-color: var(--color-ivory); /* Special intro background */
+}
+
+.crew-section,
+.venue-section,
+.dress-section,
+.itinerary-section,
+.stay-section {
+    background-color: var(--color-white);
+}
+
+.important-section,
+.vibe-section,
+.rest-section,
+.pack-section {
+    background-color: var(--color-bg-light); /* Lavender Blush */
+}
+
+.section-content {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+/* Scroll locking is now handled via JavaScript inline styles */
+

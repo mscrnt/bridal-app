@@ -1,0 +1,105 @@
+/* ===========================
+   Desktop Responsive (min-width: 1280px)
+   =========================== */
+@media (min-width: 1280px) {
+    .mobile-header {
+        padding: 0 var(--spacing-xl);
+    }
+
+    .header-title {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .title-serif {
+        font-size: 4rem;
+    }
+
+    .title-script {
+        font-size: 4rem;
+    }
+
+    .title-script.large {
+        font-size: 5rem;
+    }
+
+    .crew-grid {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: var(--spacing-xl);
+        row-gap: var(--spacing-md);
+    }
+
+    /* Accessories grid - 2x2 layout */
+    .accessories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-xl);
+        grid-auto-rows: 1fr;
+    }
+
+    .accessory-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .accessory-carousel-wrapper,
+    .accessory-carousel-container {
+        flex-shrink: 0;
+    }
+
+    .accessory-desc,
+    .accessory-note {
+        flex-grow: 0;
+    }
+
+    /* Maid of Honor spans full width on desktop too */
+    .crew-member:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .events-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    .day-schedule {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .aesthetic-images img {
+        height: 120px;
+    }
+
+    /* Carousel responsive - desktop */
+    .dress-carousel {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .dress-image {
+        height: 600px;
+    }
+
+    .dress-details {
+        padding: var(--spacing-xl);
+    }
+
+    .dress-name {
+        font-size: 2.25rem;
+    }
+
+    .dress-description {
+        font-size: 1.1rem;
+    }
+
+    .dress-link {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+}
+

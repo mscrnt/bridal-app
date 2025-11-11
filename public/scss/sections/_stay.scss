@@ -1,0 +1,209 @@
+/* ===========================
+   Our Stay Section
+   =========================== */
+.hotel-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto var(--spacing-lg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-image img {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.hotel-image img:hover {
+    opacity: 0.9;
+}
+
+.airbnb-carousel {
+    position: relative;
+    margin: var(--spacing-sm) 0;
+    width: 100%;
+}
+
+.hotel-name {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.hotel-location {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.airbnb-link {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.airbnb-link:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+
+.address-link {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.address-link:hover {
+    color: var(--color-text);
+}
+
+.hotel-details {
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+}
+
+.hotel-details-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background-color: var(--color-white);
+    border-radius: 6px;
+    max-width: 800px;
+    margin: var(--spacing-xl) auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.hotel-details-footer .detail-item {
+    flex-direction: column;
+    gap: 0.25rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    border-right: 1px solid #a95511;
+    padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.hotel-details-footer .detail-item:last-child {
+    border-right: none;
+}
+
+.detail-text-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: center;
+}
+
+.detail-text-group .detail-text {
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+.detail-icon {
+    font-size: 1.2rem;
+    min-width: 24px;
+    text-align: center;
+}
+
+.hotel-details-top .detail-icon {
+    margin-right: var(--spacing-md);
+}
+
+.hotel-details-footer .detail-icon {
+    margin-right: 0;
+    margin-bottom: 0.25rem;
+}
+
+.detail-text {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    color: var(--color-text);
+    line-height: 1.4;
+}
+
+.detail-link {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    line-height: 1.6;
+}
+
+.detail-link:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+
+/* Additional Info Links */
+.additional-info-links {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-sm);
+    font-family: var(--font-sans);
+}
+
+.info-link {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
+}
+
+.info-link:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.info-separator {
+    color: #ccc;
+    margin: 0 var(--spacing-sm);
+    font-size: 0.85rem;
+}
+
+.booking-info {
+    background-color: var(--color-bg-light);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.booking-info p {
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-text-light);
+}
+
+.property-intro {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+}
+
+.property-intro h4 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.property-intro p {
+    color: var(--color-text);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-sm);
+}
+

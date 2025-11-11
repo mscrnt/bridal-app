@@ -1,0 +1,327 @@
+/* ===========================
+   Dress Section
+   =========================== */
+.dress-section {
+    padding: 0 var(--mobile-padding) var(--spacing-sm);
+    align-items: center;
+    padding-top: var(--header-height);
+}
+
+.dress-section .section-title {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+}
+
+.dress-section .section-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.dress-info {
+    text-align: center;
+}
+
+.dress-style {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text-dark);
+}
+
+.dress-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+}
+
+.dress-images img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.color-label,
+.aesthetic-label {
+    font-family: var(--font-script);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary);
+}
+
+.color-palette {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-xl);
+    flex-wrap: wrap;
+}
+
+.color-swatch {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.aesthetic-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-sm);
+}
+
+.aesthetic-images img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Section Divider */
+.section-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-xl) var(--spacing-md);
+    padding-top: calc(var(--spacing-xl) * 2);
+    margin: 0;
+    background-color: var(--color-bg-light);
+    width: 100%;
+}
+
+.divider-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--color-primary), transparent);
+    opacity: 0.3;
+}
+
+.divider-content {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: 0 var(--spacing-lg);
+}
+
+.divider-icon {
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    opacity: 0.8;
+}
+
+.divider-text {
+    font-family: var(--font-script);
+    font-size: 2rem;
+    color: var(--color-text-dark);
+    white-space: nowrap;
+    margin: 0;
+}
+
+/* Dress Carousel */
+.dress-carousel {
+    position: relative;
+    margin: var(--spacing-sm) 0;
+    width: 100%;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    touch-action: pan-y pinch-zoom; /* Allow vertical scrolling but prevent horizontal scroll interference */
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+    will-change: transform;
+    transform: translateX(0);
+}
+
+.carousel-slide {
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    box-sizing: border-box;
+}
+
+.dress-card {
+    background: var(--color-white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dress-image {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    background-color: var(--color-white);
+    position: relative;
+}
+
+.dress-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.dress-image img:hover {
+    opacity: 0.9;
+}
+
+.dress-details {
+    padding: 0.75rem var(--spacing-sm);
+    text-align: center;
+    background: linear-gradient(to bottom, var(--color-white), var(--color-ivory));
+}
+
+.dress-name {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--color-text-dark);
+    margin-bottom: 0.25rem;
+}
+
+.dress-description {
+    color: var(--color-text-light);
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    min-height: 2.6rem; /* Reserve space for 2 lines of text */
+}
+
+.dress-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(201, 184, 168, 0.3);
+}
+
+.dress-link:hover {
+    background-color: var(--color-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(201, 184, 168, 0.4);
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 35%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    background: transparent;
+    border: none;
+    font-size: 4rem;
+    color: rgba(5, 5, 78, 0.7);
+    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+    font-weight: 300;
+}
+
+.carousel-prev {
+    left: 0;
+    justify-content: flex-start;
+    padding-left: 0.75rem;
+}
+
+.carousel-next {
+    right: 0;
+    justify-content: flex-end;
+    padding-right: 0.75rem;
+}
+
+.carousel-btn::before {
+    content: attr(data-arrow);
+}
+
+.carousel-btn:hover {
+    color: rgba(5, 5, 78, 1);
+    text-shadow: 0 2px 12px rgba(255, 255, 255, 1);
+}
+
+.carousel-btn:active {
+    transform: translateY(-50%) scale(0.9);
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) 0;
+    margin: 0;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(169, 85, 17, 0.3); /* Light Burnt Orange */
+    border: 2px solid var(--color-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.indicator.active {
+    background-color: var(--color-primary);
+    width: 30px;
+    border-radius: 5px;
+    border: 2px solid var(--color-primary);
+}
+
+.indicator:hover {
+    background-color: rgba(169, 85, 17, 0.5);
+}
+
+.carousel-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(169, 85, 17, 0.3); /* Light Burnt Orange */
+    border: 2px solid var(--color-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.carousel-indicator.active {
+    background-color: var(--color-primary);
+    width: 30px;
+    border-radius: 5px;
+    border: 2px solid var(--color-primary);
+}
+
+.carousel-indicator:hover {
+    background-color: rgba(169, 85, 17, 0.5);
+}
+
+.dress-note {
+    text-align: center;
+    margin-top: 0.5rem;
+    color: var(--color-text-light);
+    font-style: italic;
+    font-size: 0.8rem;
+}
+

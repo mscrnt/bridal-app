@@ -1,0 +1,75 @@
+/* ===========================
+   Typography
+   =========================== */
+.section-title {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: var(--spacing-xs);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-text-dark);
+}
+
+.section-subtitle {
+    font-family: var(--font-script);
+    font-size: 1.75rem;
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-lg);
+    font-weight: 400;
+}
+
+/* Tighter spacing for crew section */
+.crew-section .section-title {
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.crew-section .section-subtitle {
+    font-size: 1.65rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.title-serif {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-sm);
+}
+
+.title-script {
+    font-family: var(--font-script);
+    font-size: 3rem;
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    font-weight: 400;
+}
+
+.title-script.large {
+    font-size: 4rem;
+}
+
+.subtitle {
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-lg);
+}
+
+.divider {
+    width: 60px;
+    height: 1px;
+    background-color: var(--color-primary);
+    margin: var(--spacing-lg) auto;
+}
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridal Party Guide</title>
+    <script>
+        // Authentication check and redirect
+        const AUTH_KEY = 'bridalPartyAuth';
+        const CORRECT_PASSWORD = 'SienaTrey';
+        const AUTH_TOKEN = 'authenticated_' + btoa(CORRECT_PASSWORD);
+
+        // Check if user is authenticated
+        const isAuthenticated = localStorage.getItem(AUTH_KEY) === AUTH_TOKEN;
+
+        if (isAuthenticated) {
+            // User is authenticated, go to main site
+            window.location.replace('main.html');
+        } else {
+            // User needs to authenticate
+            window.location.replace('auth.html');
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>

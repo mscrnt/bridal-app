@@ -1,0 +1,33 @@
+/* ===========================
+   CSS Variables & Reset
+   =========================== */
+:root {
+    /* Color Palette - Wedding Colors */
+    --color-primary: #A95511; /* Burnt Orange */
+    --color-secondary: #05054E; /* Federal Blue */
+    --color-accent: #FFEFF6; /* Lavender Blush */
+    --color-eggshell: #F7F0DD; /* Eggshell */
+    --color-ivory: #F7F0DD; /* Eggshell */
+    --color-text-dark: #05054E; /* Federal Blue for text */
+    --color-text-light: #6B6B6B;
+    --color-white: #FFFFFF;
+    --color-bg-light: #FFEFF6; /* Lavender Blush */
+
+    /* Typography */
+    --font-serif: 'Cormorant Garamond', serif;
+    --font-sans: 'Montserrat', sans-serif;
+    --font-script: 'Great Vibes', cursive;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-xxl: 4rem;
+
+    /* Layout */
+    --max-width: 1200px;
+    --mobile-padding: 1.25rem;
+    --header-height: 60px;
+}

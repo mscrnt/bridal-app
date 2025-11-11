@@ -1,0 +1,40 @@
+/* ===========================
+   Section Divider
+   =========================== */
+.section-divider {
+    background-color: var(--color-bg-light);
+    min-height: auto;
+    padding: var(--spacing-xl) var(--spacing-md);
+    padding-top: calc(var(--spacing-xl) * 2);
+}
+
+.part-title {
+    font-family: var(--font-serif);
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--color-text-dark);
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* ===========================
+   Navigation Divider
+   =========================== */
+.nav-divider {
+    font-family: var(--font-serif);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--color-primary);
+    padding: var(--spacing-md) var(--mobile-padding) var(--spacing-xs);
+    margin-top: var(--spacing-sm);
+    border-top: 1px solid var(--color-champagne);
+}
+
+.nav-divider:first-of-type {
+    margin-top: 0;
+}
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="description" content="Bridal Party Welcome Guide">
+
+    <!-- iOS Specific Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Bridal Party">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icons/favicon.png">
+    <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
+
+    <title>Bridal Party Guide</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- Authentication Protection -->
+    <script>
+        // Check authentication before rendering page
+        const AUTH_KEY = 'bridalPartyAuth';
+        const CORRECT_PASSWORD = 'SienaTrey';
+        const AUTH_TOKEN = 'authenticated_' + btoa(CORRECT_PASSWORD);
+
+        if (localStorage.getItem(AUTH_KEY) !== AUTH_TOKEN) {
+            // Not authenticated, redirect to auth page
+            window.location.replace('auth.html');
+        }
+    </script>
+</head>
+<body>
+    <!-- Header Component -->
+    <div id="header-component"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Welcome Component -->
+        <div id="welcome-component"></div>
+
+        <!-- PART 1: THE WEDDING PARTY -->
+
+        <!-- Crew Component -->
+        <div id="crew-component"></div>
+
+        <!-- Important Dates Component -->
+        <div id="important-component"></div>
+
+        <!-- Venue Component -->
+        <div id="venue-component"></div>
+
+        <!-- Vibe Component -->
+        <div id="vibe-component"></div>
+
+        <!-- Dress Component -->
+        <div id="dress-component"></div>
+
+        <!-- Rest Component -->
+        <div id="rest-component"></div>
+
+        <!-- Section Divider -->
+        <div class="section-divider">
+            <div class="divider-line"></div>
+            <div class="divider-content">
+                <span class="divider-icon">✦</span>
+                <p class="divider-text">The Bachelorette Weekend</p>
+                <span class="divider-icon">✦</span>
+            </div>
+            <div class="divider-line"></div>
+        </div>
+
+        <!-- PART 2: THE BACHELORETTE PARTY -->
+
+        <!-- Itinerary Component -->
+        <div id="itinerary-component"></div>
+
+        <!-- Pack Component -->
+        <div id="pack-component"></div>
+
+        <!-- Stay Component -->
+        <div id="stay-component"></div>
+
+    </main>
+
+    <!-- Image Modal Component -->
+    <div id="image-modal"></div>
+
+    <!-- Property Details Modal Component -->
+    <div id="property-details-modal"></div>
+
+    <!-- House Rules Modal Component -->
+    <div id="house-rules-modal"></div>
+
+    <!-- House Manual Modal Component -->
+    <div id="house-manual-modal"></div>
+
+    <script type="module" src="js/modules/componentLoader.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

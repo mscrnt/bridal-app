@@ -1,0 +1,196 @@
+/* ===========================
+   Itinerary Section - Timeline
+   =========================== */
+.timeline {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: var(--spacing-lg) 0;
+}
+
+.timeline-day {
+    margin-bottom: var(--spacing-xxl);
+}
+
+.timeline-day:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-day-title {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-lg);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.timeline-events {
+    position: relative;
+    padding-left: 0;
+}
+
+/* Central vertical line */
+.timeline-events::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.timeline-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 40px 1fr;
+    align-items: center;
+    gap: var(--spacing-lg);
+    margin-bottom: 60px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Dot with icon - always in center column */
+.timeline-dot {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-primary);
+    border: 3px solid var(--color-white);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    line-height: 1;
+    justify-self: center;
+    z-index: 2;
+}
+
+/* Time inside the event card */
+.timeline-time {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+    display: block;
+}
+
+/* Event cards */
+.timeline-event {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    color: var(--color-text);
+    padding: var(--spacing-md);
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+/* Left side events */
+.timeline-event-left {
+    text-align: center;
+}
+
+/* Add connector line from left event to dot */
+.timeline-event-left::after {
+    content: '';
+    position: absolute;
+    right: calc(-1 * var(--spacing-lg));
+    top: 50%;
+    width: var(--spacing-lg);
+    height: 2px;
+    background-color: var(--color-primary);
+    transform: translateY(-50%);
+}
+
+/* Right side events */
+.timeline-event-right {
+    text-align: center;
+}
+
+/* Add connector line from dot to right event */
+.timeline-event-right::before {
+    content: '';
+    position: absolute;
+    left: calc(-1 * var(--spacing-lg));
+    top: 50%;
+    width: var(--spacing-lg);
+    height: 2px;
+    background-color: var(--color-primary);
+    transform: translateY(-50%);
+}
+
+/* Empty placeholders */
+.timeline-event-empty {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        max-width: 100%;
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+
+    .timeline-day-title {
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+    }
+
+    /* Center the timeline line on mobile */
+    .timeline-events::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .timeline-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .timeline-dot {
+        width: 36px;
+        height: 36px;
+        font-size: 1.1rem;
+        order: 1;
+    }
+
+    .timeline-time {
+        font-size: 0.85rem;
+    }
+
+    .timeline-event {
+        text-align: center;
+        font-size: 0.95rem;
+        order: 2;
+    }
+
+    .timeline-event-left,
+    .timeline-event-right {
+        text-align: center;
+    }
+
+    /* Remove connector lines on mobile */
+    .timeline-event-left::after,
+    .timeline-event-right::before {
+        display: none;
+    }
+
+    /* Hide empty placeholders on mobile */
+    .timeline-event-empty {
+        display: none;
+    }
+}
+

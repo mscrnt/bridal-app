@@ -1,0 +1,64 @@
+/* ===========================
+   Venue Section
+   =========================== */
+.venue-image {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto var(--spacing-lg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.venue-name {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text-dark);
+}
+
+.venue-description {
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-text-light);
+    max-width: 600px;
+    margin: 0 auto var(--spacing-lg);
+}
+
+.venue-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    align-items: center;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    font-size: 0.95rem;
+}
+
+.detail-icon {
+    display: none;
+}
+
+.detail-text {
+    color: var(--color-text-light);
+}
+
+.detail-link {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.detail-link:hover {
+    color: var(--color-text-dark);
+    text-decoration: underline;
+}
+

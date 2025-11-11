@@ -1,0 +1,166 @@
+/* ===========================
+   The Rest Section (Accessories)
+   =========================== */
+.accessories-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+}
+
+.accessory-card {
+    position: relative;
+    text-align: center;
+    padding: var(--spacing-lg);
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.accessory-title {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-dark);
+}
+
+/* Accessory Carousel Styles */
+.accessory-carousel-wrapper {
+    width: 100%;
+    margin-bottom: var(--spacing-md);
+}
+
+.accessory-carousel-container {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: var(--spacing-md);
+}
+
+.accessory-carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+}
+
+.accessory-carousel-slide {
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    box-sizing: border-box;
+}
+
+.accessory-carousel-slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: var(--color-white);
+}
+
+.accessory-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 3rem;
+    color: rgba(5, 5, 78, 0.7);
+    cursor: pointer;
+    z-index: 10;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.8);
+}
+
+.accessory-carousel-btn:hover {
+    color: rgba(5, 5, 78, 1);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.accessory-prev {
+    left: 0;
+}
+
+.accessory-next {
+    right: 0;
+}
+
+.accessory-carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-sm);
+}
+
+.accessory-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(169, 85, 17, 0.3);
+    border: 2px solid var(--color-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.accessory-indicator.active {
+    background-color: var(--color-primary);
+    width: 24px;
+    border-radius: 4px;
+}
+
+.accessory-indicator:hover {
+    background-color: rgba(169, 85, 17, 0.5);
+}
+
+.accessory-desc {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-sm);
+}
+
+.accessory-note {
+    font-size: 0.8rem;
+    color: var(--color-text-light);
+    line-height: 1.5;
+    margin-top: var(--spacing-sm);
+}
+
+.product-links {
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: center;
+    margin-top: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.product-link {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-md);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.product-link:hover {
+    background-color: #8A4410;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(169, 85, 17, 0.3);
+}
+
+.neutral-label {
+    font-family: var(--font-script);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+    color: var(--color-primary);
+    text-align: center;
+}
+

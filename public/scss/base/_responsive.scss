@@ -1,0 +1,333 @@
+/* ===========================
+   Thank You Section
+   =========================== */
+.thankyou-section {
+    background-color: var(--color-ivory);
+}
+
+.thankyou-image {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto var(--spacing-xl);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.thankyou-text {
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-lg);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.thankyou-sign {
+    text-align: center;
+    font-family: var(--font-script);
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+/* ===========================
+   Small Phone Responsive (max-width: 420px)
+   =========================== */
+@media (max-width: 420px) {
+    .section {
+        padding-top: var(--spacing-sm) !important;
+        justify-content: flex-start !important;
+    }
+
+    .welcome-section {
+        padding-top: var(--spacing-md) !important;
+    }
+
+    .crew-section {
+        padding-top: var(--spacing-sm) !important;
+    }
+
+    .dress-section {
+        padding-top: 0.5rem !important;
+    }
+
+    .crew-grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: var(--spacing-sm);
+        row-gap: var(--spacing-sm);
+    }
+
+    .crew-photo {
+        width: 90px;
+        height: 90px;
+    }
+
+    .crew-name {
+        font-size: 0.9rem;
+    }
+
+    .crew-role {
+        font-size: 0.7rem;
+    }
+
+    .crew-instagram {
+        font-size: 0.7rem;
+    }
+
+    .hotel-details-footer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+    }
+
+    .hotel-details-footer .detail-item {
+        border-right: 1px solid #a95511;
+        border-bottom: 1px solid #a95511;
+        padding: var(--spacing-md);
+    }
+
+    .hotel-details-footer .detail-item:nth-child(2),
+    .hotel-details-footer .detail-item:nth-child(4) {
+        border-right: none;
+    }
+
+    .hotel-details-footer .detail-item:nth-child(3),
+    .hotel-details-footer .detail-item:nth-child(4) {
+        border-bottom: none;
+    }
+}
+
+/* ===========================
+   Tablet Responsive (min-width: 768px)
+   =========================== */
+@media (min-width: 768px) {
+    .section {
+        padding: var(--spacing-xl) var(--spacing-xl);
+    }
+
+    .crew-section {
+        padding-top: var(--spacing-md);
+        justify-content: flex-start;
+    }
+
+    .venue-section {
+        padding-top: var(--spacing-md);
+        justify-content: flex-start;
+    }
+
+    .dress-section {
+        padding-top: var(--spacing-md);
+        justify-content: flex-start;
+    }
+
+    /* Welcome section - better centering on iPad */
+    .welcome-section {
+        justify-content: center;
+        padding-top: var(--spacing-lg);
+    }
+
+    .welcome-logo {
+        width: 300px;
+        height: auto;
+    }
+
+    .section-title {
+        font-size: 3rem;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .section-subtitle {
+        font-size: 2rem;
+    }
+
+    .title-serif {
+        font-size: 4rem;
+    }
+
+    .title-script {
+        font-size: 3rem;
+    }
+
+    .crew-grid {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: var(--spacing-xl);
+        row-gap: var(--spacing-md);
+    }
+
+    /* Maid of Honor still spans full width on tablet */
+    .crew-member:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .crew-photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .dress-images {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    .aesthetic-images {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .vibe-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-md);
+    }
+
+    .vibe-gallery img {
+        height: 200px;
+    }
+
+    .color-swatch {
+        width: 60px;
+        height: 60px;
+    }
+
+    .packing-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    .info-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Carousel responsive - tablet */
+    .dress-carousel {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .dress-image {
+        height: 500px;
+    }
+
+    /* Match accessory card width to dress carousel on iPad */
+    .accessory-card {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .carousel-btn {
+        font-size: 6rem;
+        top: 50%;
+    }
+
+    .dress-name {
+        font-size: 2rem;
+    }
+
+    .dress-description {
+        font-size: 1rem;
+    }
+}
+
+/* Desktop (min-width: 1280px) */
+@media (min-width: 1280px) {
+    .mobile-header {
+        padding: 0 var(--spacing-xl);
+    }
+
+    .header-title {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .title-serif {
+        font-size: 4rem;
+    }
+
+    .title-script {
+        font-size: 4rem;
+    }
+
+    .title-script.large {
+        font-size: 5rem;
+    }
+
+    .crew-grid {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: var(--spacing-xl);
+        row-gap: var(--spacing-md);
+    }
+
+    /* Accessories grid - 2x2 layout */
+    .accessories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-xl);
+        grid-auto-rows: 1fr;
+    }
+
+    .accessory-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .accessory-carousel-wrapper,
+    .accessory-carousel-container {
+        flex-shrink: 0;
+    }
+
+    .accessory-desc,
+    .accessory-note {
+        flex-grow: 0;
+    }
+
+    /* Maid of Honor spans full width on desktop too */
+    .crew-member:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .events-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    .day-schedule {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .aesthetic-images img {
+        height: 120px;
+    }
+
+    /* Carousel responsive - desktop (with responsive sizing) */
+    .dress-carousel {
+        max-width: min(800px, 90vw);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .dress-image {
+        height: min(600px, 70vh);
+    }
+
+    .dress-details {
+        padding: var(--spacing-xl);
+    }
+
+    .dress-name {
+        font-size: 2.25rem;
+    }
+
+    .dress-description {
+        font-size: 1.1rem;
+    }
+
+    .dress-link {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,55 @@
+/* ===========================
+   Important Events Section
+   =========================== */
+.events-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.event-card {
+    background-color: var(--color-white);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--color-primary);
+}
+
+.event-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.event-date {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.event-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-text-dark);
+}
+
+.event-calendar-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+.event-calendar-btn:hover {
+    transform: scale(1.2);
+}
+
+.event-calendar-btn:active {
+    transform: scale(1);
+}
+

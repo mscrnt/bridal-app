@@ -1,0 +1,17 @@
+{
+  "name": "bridal-party-website",
+  "version": "1.0.0",
+  "description": "Bridal party website with SCSS styling",
+  "scripts": {
+    "scss:build": "sass --no-source-map public/scss/main.scss public/css/styles.css && sass --no-source-map public/scss/auth.scss public/css/auth.css",
+    "scss:build:main": "sass --no-source-map public/scss/main.scss public/css/styles.css",
+    "scss:build:auth": "sass --no-source-map public/scss/auth.scss public/css/auth.css",
+    "scss:watch": "sass --watch --no-source-map public/scss/main.scss public/css/styles.css",
+    "scss:prod": "sass --style=compressed --no-source-map public/scss/main.scss public/css/styles.css && sass --style=compressed --no-source-map public/scss/auth.scss public/css/auth.css",
+    "scss:prod:main": "sass --style=compressed --no-source-map public/scss/main.scss public/css/styles.css",
+    "scss:prod:auth": "sass --style=compressed --no-source-map public/scss/auth.scss public/css/auth.css"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0"
+  }
+}

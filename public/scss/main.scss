@@ -1,0 +1,33 @@
+// ===========================
+// Main SCSS - Modular Imports
+// ===========================
+
+// Base Styles
+@use 'base/variables';
+@use 'base/reset';
+@use 'base/layout';
+@use 'base/typography';
+
+// Components
+@use 'components/nav';
+@use 'components/dividers';
+@use 'components/modals';
+@use 'components/image-modal';
+@use 'components/property-modal';
+
+// Sections
+@use 'sections/hero';
+@use 'sections/crew';
+@use 'sections/events';
+@use 'sections/venue';
+@use 'sections/itinerary';
+@use 'sections/dress';
+@use 'sections/vibe';
+@use 'sections/stay';
+@use 'sections/beauty';
+@use 'sections/pack';
+@use 'sections/weather';
+@use 'sections/thankyou';
+
+// Responsive Styles - MUST BE LAST to override base styles
+@use 'base/responsive';
