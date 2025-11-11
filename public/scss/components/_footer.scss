@@ -1,0 +1,16 @@
+// ===========================
+// Footer Component
+// ===========================
+
+.site-footer {
+    padding: var(--spacing-sm) var(--mobile-padding) var(--spacing-md);
+    text-align: center;
+
+    p {
+        font-family: var(--font-sans);
+        font-size: 0.875rem;
+        color: var(--color-text-light);
+        margin: 0;
+        letter-spacing: 0.5px;
+    }
+}
